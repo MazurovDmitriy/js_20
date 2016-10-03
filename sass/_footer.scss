@@ -1,0 +1,70 @@
+.menu-bottom {
+    background: #2a2d32;
+    padding: 57px 0 70px 0;
+}
+.menu-bottom__group {
+    display: inline-block;
+    width: 260px;
+    box-sizing: border-box;
+    margin-right: 35px;
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+.menu-bottom__header {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.menu-bottom__list {
+    list-style: none;
+    margin-top: 45px;
+}
+.menu-bottom__item {
+    border-bottom: 1px solid #393c40;
+    padding: 8px 0;
+    &:last-child {
+        border: 0;
+    }
+    a {
+        @include second-font;
+        text-decoration: none;
+        &:hover {
+            color: $colorBlueLink;
+        }
+    }
+}
+
+.copy-box {
+    background: #35383c;
+    padding: 20px 0;
+    @include second-font;
+    color: #5d6063;
+    a{
+        text-decoration: none;
+        color: #5d6063; 
+        &:hover {
+            color: $colorBlueLink;
+        }
+    }
+}
+.adress {
+    background: url(../img/location.png) 0 0 no-repeat;
+    padding-left: 24px;
+    display: inline-block;
+}
+.phone {
+    background: url(../img/phone.png) 0 0 no-repeat;
+    margin-left: 30px;
+    padding-left: 20px;
+    display: inline-block;
+}
+.email {
+    background: url(../img/email.png) 0 2px no-repeat;
+    margin-left: 40px;
+    padding-left: 30px;
+    display: inline-block;
+}
+.copyright {
+    float: right;
+}

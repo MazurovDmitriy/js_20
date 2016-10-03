@@ -1,0 +1,35 @@
+$siteWidth: 1160px;
+$colorYellowLink: #f4b60d;
+$colorBlueLink: #248cec;
+
+@mixin second-font {
+  font: {
+    family: Arial;
+    size: 13px;
+    weight: normal;
+  }
+  line-height: 1.5em;
+  color:  #8a8a8a;
+}
+
+* {
+	margin: 0;
+	padding: 0
+}
+body {
+	font: 12px/1.5em 'ubuntu_medium', Arial, sans-serif;
+}
+.wrapper {
+	width: $siteWidth;
+	margin: 0 auto;
+}
+
+@import "fonts";
+@import "header";
+@import "slider";
+@import "content";
+@import "footer";
+
+
+
+
