@@ -107,7 +107,7 @@ header {
     width: 185px;
     margin: 13px 0 0 15px;
     font: 12px Arial, sans-serif;
-    color: #626466;
+    color: #b5b6b6;
     outline: none; }
   header .search__button {
     position: absolute;
@@ -374,7 +374,11 @@ header {
   list-style: none; }
 
 .banners__item {
-  margin-bottom: 5px; }
+  height: 39px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  transition-property: height;
+  transition-duration: 0.5s; }
 
 .banners__item-header {
   height: 39px;
@@ -411,19 +415,22 @@ header {
   font-weight: normal;
   line-height: 1.5em;
   color: #8a8a8a;
-  display: none; }
-
-.banners__item--active .banners__item-header {
-  color: #fff;
-  background: #f4b60d;
-  border: 0; }
-  .banners__item--active .banners__item-header:before {
-    content: "-";
-    color: #fff;
-    border-right: 2px solid #f6c53d; }
-
-.banners__item--active .banners__text {
   display: block; }
+
+.banners__item--active {
+  height: 200px;
+  transition-property: height;
+  transition-duration: 0.5s; }
+  .banners__item--active .banners__item-header {
+    color: #fff;
+    background: #f4b60d;
+    border: 0; }
+    .banners__item--active .banners__item-header:before {
+      content: "-";
+      color: #fff;
+      border-right: 2px solid #f6c53d; }
+  .banners__item--active .banners__text {
+    display: block; }
 
 .brands {
   background: #fff;

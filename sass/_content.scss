@@ -154,8 +154,11 @@
     list-style: none;
 }
 .banners__item {
-
+    height: 39px;
     margin-bottom: 5px;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 0.5s;
 }
 .banners__item-header {
     height: 39px;
@@ -189,10 +192,13 @@
 .banners__text {
     padding: 24px 0 33px 37px;
     @include second-font;
-    display: none;
+    display: block;
 }
 
 .banners__item--active {
+    height:200px;
+    transition-property: height;
+    transition-duration: 0.5s;
     .banners__item-header{
         color: #fff;
         background: $colorYellowLink;
